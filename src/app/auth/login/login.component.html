@@ -1,1 +1,37 @@
-<p>login works!</p>
+<section>
+  <form
+    class="login-form"
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    fxLayoutGap="16px"
+    #f="ngForm"
+    (ngSubmit)="onLoginSubmit(f)"
+  >
+    <mat-form-field>
+      <mat-label>Email address</mat-label>
+      <input type="email" name="email" matInput ngModel email required />
+      <mat-error>Please enter a valid email address.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>New Password</mat-label>
+      <input
+        type="password"
+        name="password"
+        #passwordInput
+        matInput
+        ngModel
+        required
+      />
+    </mat-form-field>
+
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="f.invalid"
+    >
+      Submit
+    </button>
+  </form>
+</section>

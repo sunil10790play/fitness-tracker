@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs="true">
+    <button
+      mat-icon-button
+      (click)="onMenuClick()"
+      aria-label="Button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div><a class="toolbar-link" routerLink="/">Logo</a></div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs="true">
+    <ul fxLayout fxLayoutGap="16px" class="toolbar-items">
+      <li><a class="toolbar-link" routerLink="/signup">Signup</a></li>
+      <li><a class="toolbar-link" routerLink="/login">Login</a></li>
+      <li><a class="toolbar-link" routerLink="/training">Training</a></li>
+      <li><a class="toolbar-link">Logout</a></li>
+    </ul>
+  </div>
+</mat-toolbar>

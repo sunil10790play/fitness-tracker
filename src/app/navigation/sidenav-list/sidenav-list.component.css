@@ -1,0 +1,17 @@
+.sidenav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.sidenav-link:hover,
+.sidenav-link:active {
+  color: lightgrey;
+}
+
+.sidenav-caption {
+  padding-left: 8px;
+}
+
+mat-sidenav {
+  width: 150px;
+}
